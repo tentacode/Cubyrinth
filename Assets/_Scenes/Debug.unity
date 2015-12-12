@@ -96,9 +96,10 @@ GameObject:
   - 33: {fileID: 24238891}
   - 136: {fileID: 24238890}
   - 23: {fileID: 24238889}
+  - 114: {fileID: 24238892}
   m_Layer: 0
   m_Name: LeftButton
-  m_TagString: Interactable
+  m_TagString: RotationButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,6 +162,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 24238887}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &24238892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24238887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca19516ae38443049c107528ffa3cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 1
+  sliceRotator: {fileID: 1521722587}
 --- !u!1 &26360315
 GameObject:
   m_ObjectHideFlags: 0
@@ -3318,6 +3332,7 @@ MonoBehaviour:
   cycleDuration: 6
   rotationEasing: 8
   shakeAmount: 0.04
+  rotationAxis: z
   rotateAnticlockwiseKey: 257
   rotateClockwiseKey: 259
 --- !u!82 &615085839
@@ -6572,9 +6587,10 @@ GameObject:
   - 33: {fileID: 1177376349}
   - 136: {fileID: 1177376348}
   - 23: {fileID: 1177376347}
+  - 114: {fileID: 1177376350}
   m_Layer: 0
   m_Name: RightButton
-  m_TagString: Interactable
+  m_TagString: RotationButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6637,6 +6653,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1177376345}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1177376350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1177376345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca19516ae38443049c107528ffa3cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: -1
+  sliceRotator: {fileID: 1521722587}
 --- !u!1 &1190163096
 GameObject:
   m_ObjectHideFlags: 0
@@ -8724,6 +8753,7 @@ MonoBehaviour:
   cycleDuration: 6
   rotationEasing: 8
   shakeAmount: 0.04
+  rotationAxis: z
   rotateAnticlockwiseKey: 260
   rotateClockwiseKey: 262
 --- !u!82 &1521722588
@@ -11229,6 +11259,7 @@ MonoBehaviour:
   cycleDuration: 6
   rotationEasing: 8
   shakeAmount: 0.04
+  rotationAxis: z
   rotateAnticlockwiseKey: 263
   rotateClockwiseKey: 265
 --- !u!82 &1903183480

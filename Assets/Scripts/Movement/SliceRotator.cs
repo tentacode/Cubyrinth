@@ -7,13 +7,14 @@ public class SliceRotator : MonoBehaviour
 	public float cycleDuration;
 	public iTween.EaseType rotationEasing;
 	public float shakeAmount;
+	public string rotationAxis = "x";
 
 	[Header("Debug input")]
 	public KeyCode rotateAnticlockwiseKey;
 	public KeyCode rotateClockwiseKey;
 
 	private bool isRotating = false;
-	enum RotationDirection{Anticlockwise = -1, Clockwise = 1}
+	public enum RotationDirection{Anticlockwise = -1, Clockwise = 1}
 
 	void Update()
 	{
@@ -24,7 +25,7 @@ public class SliceRotator : MonoBehaviour
 		}
 	}
 
-	void Rotate(RotationDirection rotationDirection)
+	public void Rotate(RotationDirection rotationDirection)
 	{
 		if (isRotating) {
 			return;
@@ -35,7 +36,7 @@ public class SliceRotator : MonoBehaviour
 		GetComponent<AudioSource>().Play();
 
 		iTween.RotateBy(gameObject, iTween.Hash(
-			"x", (int)rotationDirection * 0.25, 
+			rotationAxis, (int)rotationDirection * 0.25, 
 			"easeType", rotationEasing, 
 			"time", cycleDuration,
 			"oncomplete", "RotationEnded",
