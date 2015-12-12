@@ -23,12 +23,13 @@ public class CameraController : MonoBehaviour
 
 		if (Input.GetButtonDown("Fire1") && IsFpsCamera()) {
 			RaycastHit hit;
-			Ray ray = GameObject.Find("FirstPersonCharacter").GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+
+			Vector3 middleScreenPosition = new Vector3(Screen.width / 2, Screen.height / 2, 0);
+			Ray ray = GameObject.Find("FirstPersonCharacter").GetComponent<Camera>().ScreenPointToRay(middleScreenPosition);
 			if (Physics.Raycast(ray, out hit)) {
 				if (hit.collider.tag == "Interactable") {
-						
+					hit.collider.gameObject.GetComponent<ClickInteraction>().OnClick();
 				}
-				//hit.collider.gameObject
 			}
 		}
 	}
