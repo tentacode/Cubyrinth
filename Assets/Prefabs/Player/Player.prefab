@@ -107,6 +107,7 @@ GameObject:
   - 114: {fileID: 11498974}
   - 114: {fileID: 11406946}
   - 114: {fileID: 11483854}
+  - 114: {fileID: 11494316}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -390,7 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eec59ecec03a454d8e10bb57e72210c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: 0.3
+  Acceleration: 0.2
   Damping: 0.2
   BackAndSideDampen: 1
   JumpForce: 0.7
@@ -424,6 +425,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugKeyCode: 301
+--- !u!114 &11494316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bb0a17b6a704298b65be4fb08ef480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetButton: 9
 --- !u!114 &11498974
 MonoBehaviour:
   m_ObjectHideFlags: 1
