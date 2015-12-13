@@ -10,15 +10,7 @@ public class DoorMover : MonoBehaviour {
 	public enum DoorState {Idle, Falling, Fallen};
 	public DoorState doorState = DoorState.Idle;
 	public Transform transitionPoint;
-
-	private Vector3 originalPosition;
-	private Vector3 originalRotation;
-
-	void Start ()
-	{
-		originalPosition = transform.position;
-		originalRotation = transform.rotation.eulerAngles;
-	}
+	public Transform startPoint;
 
 	public void DropDoor ()
 	{
@@ -26,7 +18,7 @@ public class DoorMover : MonoBehaviour {
 			return;
 		}
 
-		Translate(originalPosition, dropPoint.position, "DoorFallen");
+		Translate(startPoint.position, dropPoint.position, "DoorFallen");
 		Rotate(dropPoint.rotation.eulerAngles);
 	}
 
@@ -36,8 +28,8 @@ public class DoorMover : MonoBehaviour {
 			return;
 		}
 
-		Translate(dropPoint.position, originalPosition, "DoorIdled");
-		Rotate(originalRotation);
+		Translate(dropPoint.position, startPoint.position, "DoorIdled");
+		Rotate(startPoint.rotation.eulerAngles);
 	}
 
 	void Translate(Vector3 origin, Vector3 destination, string callback)
