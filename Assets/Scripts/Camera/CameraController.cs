@@ -5,14 +5,15 @@ using UnityEngine.UI;
 public class CameraController : MonoBehaviour
 {
 	public GameObject globalCamera;
-	public GameObject playerCamera;
+	public GameObject player;
+    public Camera rayCamera;
 	public KeyCode switchCameraKey;
 	public Image crosshair;
 	public float minDistanceRayHit = 2.5f;
 
 	void Awake()
 	{
-		playerCamera.SetActive(false);
+        player.GetComponent<PlayerActivator>().Desactivate();
 		Cursor.visible = false;
 	}
 
@@ -26,9 +27,9 @@ public class CameraController : MonoBehaviour
 			RaycastHit hit;
 
 			Vector3 middleScreenPosition = new Vector3(Screen.width / 2, Screen.height / 2, 0);
-			Ray ray = GameObject.Find("FirstPersonCharacter").GetComponent<Camera>().ScreenPointToRay(middleScreenPosition);
+			Ray ray = rayCamera.ScreenPointToRay(middleScreenPosition);
 			if (Physics.Raycast(ray, out hit)) {
-				float distance = Vector3.Distance(playerCamera.transform.position, hit.collider.gameObject.transform.position);
+				float distance = Vector3.Distance(rayCamera.transform.position, hit.collider.gameObject.transform.position);
 
                 if (distance < minDistanceRayHit && hit.collider.tag == "RotationButton")
                 {
@@ -52,12 +53,12 @@ public class CameraController : MonoBehaviour
 	{
 		if (!IsFpsCamera()) {
 			globalCamera.SetActive(false);
-			playerCamera.SetActive(true);
-			crosshair.enabled = true;
+            player.GetComponent<PlayerActivator>().Activate();
+            crosshair.enabled = true;
 		} else {
 			globalCamera.SetActive(true);
-			playerCamera.SetActive(false);
-			crosshair.enabled = false;
+            player.GetComponent<PlayerActivator>().Desactivate();
+            crosshair.enabled = false;
 		}
 	}
 }

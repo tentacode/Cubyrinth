@@ -204,7 +204,7 @@ GameObject:
   - 4: {fileID: 419232}
   - 114: {fileID: 11483170}
   - 143: {fileID: 14388066}
-  - 114: {fileID: 11492678}
+  - 114: {fileID: 11488432}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -738,16 +738,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Acceleration: 0.3
-  Damping: 0.3
-  BackAndSideDampen: 0.5
-  JumpForce: 0.3
+  Damping: 0.2
+  BackAndSideDampen: 1
+  JumpForce: 0.7
   RotationAmount: 0.3
   RotationRatchet: 45
   HmdResetsY: 1
-  HmdRotatesY: 1
-  GravityModifier: 1
+  HmdRotatesY: 0
+  GravityModifier: 0.4
   useProfileData: 1
---- !u!114 &11492678
+  sprintSpeed: 1.5
+--- !u!114 &11488432
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -755,9 +756,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 185824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b71d1996d67004241a3b69960856ffcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 69c9852af0f29c045829a981404789ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugKeyCode: 301
 --- !u!136 &13613660
 CapsuleCollider:
   m_ObjectHideFlags: 1
