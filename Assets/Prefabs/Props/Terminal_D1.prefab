@@ -99,6 +99,7 @@ GameObject:
   - 136: {fileID: 13688814}
   - 23: {fileID: 2332452}
   - 114: {fileID: 11429474}
+  - 114: {fileID: 11459872}
   m_Layer: 0
   m_Name: RightButton
   m_TagString: DoorButton
@@ -118,6 +119,7 @@ GameObject:
   - 136: {fileID: 13632210}
   - 23: {fileID: 2309414}
   - 114: {fileID: 11437742}
+  - 114: {fileID: 11424942}
   m_Layer: 0
   m_Name: LeftButton
   m_TagString: DoorButton
@@ -308,8 +310,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114430}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 14.0354, y: 46.906, z: -24.501}
+  m_LocalRotation: {x: 0.000001117587, y: 0, z: 0, w: -1}
+  m_LocalPosition: {x: -182.518, y: 221.88, z: 124.693}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 455700}
@@ -538,7 +540,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: eda69b94f19c74e42bdbed2a6ce5cddc, type: 2}
+  - {fileID: 2100000, guid: aa75839a96ff26b4b90d5d0b7a55912e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -869,6 +871,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11424942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e734e494c44bcdb468bd95d8b27367c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &11429474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -895,6 +909,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interaction: 0
   door: {fileID: 0}
+--- !u!114 &11459872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e734e494c44bcdb468bd95d8b27367c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!136 &13632210
 CapsuleCollider:
   m_ObjectHideFlags: 1
