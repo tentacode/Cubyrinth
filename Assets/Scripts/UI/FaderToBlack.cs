@@ -5,13 +5,13 @@ using UnityEngine.UI;
 public class FaderToBlack : MonoBehaviour
 {
 	public delegate void FadeCallback();
-	private float fadeDelay;
+	private float fadeDelay = 1.0f;
     
 	private FadeCallback fadedCallback;
 	private Image image;
 
-	enum FadeState {Idle, FadeIn, FadeOut};
-	private FadeState fadeState = FadeState.Idle;
+	public enum FadeState {Idle, FadeIn, FadeOut};
+	public FadeState fadeState = FadeState.Idle;
 
 	void Start()
 	{

@@ -21,10 +21,6 @@ public class CameraController : MonoBehaviour
 
 	void Update ()
 	{
-		if (Input.GetKeyDown(switchCameraKey)) {
-			ToggleCamera();
-        }
-
         if (IsFpsCamera()) {
             RayCast();
         }
@@ -69,12 +65,12 @@ public class CameraController : MonoBehaviour
 		return !globalCamera.activeSelf;
 	}
 
-	void ToggleCamera()
+	public void ToggleCamera()
 	{
 		if (!IsFpsCamera()) {
-			globalCamera.SetActive(false);
             player.GetComponent<PlayerActivator>().Activate();
-		} else {
+            globalCamera.SetActive(false);
+        } else {
 			globalCamera.SetActive(true);
             player.GetComponent<PlayerActivator>().Desactivate();
 		}
