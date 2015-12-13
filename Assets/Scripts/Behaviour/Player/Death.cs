@@ -3,8 +3,6 @@ using System.Collections;
 
 public class Death : MonoBehaviour
 {
-	public Transform respawnPoint;
-
 	public void Die()
 	{
 		var fadeToBlack = GameObject.Find("FadeToBlack");
@@ -14,8 +12,23 @@ public class Death : MonoBehaviour
 
 	public void Respawn()
 	{
-		var rb = gameObject.GetComponent<Rigidbody>();
-		rb.transform.position = respawnPoint.position;
-		rb.transform.rotation = respawnPoint.rotation;
-	}
+        GameObject[] spawners = GameObject.FindGameObjectsWithTag("Respawn");
+
+        float maxY = float.NegativeInfinity;
+        Vector3 highPosition = new Vector3();
+        Quaternion quaternion = new Quaternion();
+
+        foreach (GameObject spawner in spawners)
+        {
+            if (spawner.transform.position.y > maxY)
+            {
+                maxY = spawner.transform.position.y;
+                highPosition = spawner.transform.position;
+                quaternion = spawner.transform.rotation;
+            }
+        }
+
+        transform.position = highPosition;
+        transform.rotation = quaternion;
+    }
 }
