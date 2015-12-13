@@ -193,10 +193,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globalCamera: {fileID: 127534}
-  playerCamera: {fileID: 0}
+  player: {fileID: 0}
   switchCameraKey: 9
-  crosshair: {fileID: 0}
-  minDistanceRayHit: 20
+  rayCamera: {fileID: 0}
+  minDistanceRayHit: 2
+  rayRadius: 0.4
 --- !u!114 &11467722
 MonoBehaviour:
   m_ObjectHideFlags: 1
