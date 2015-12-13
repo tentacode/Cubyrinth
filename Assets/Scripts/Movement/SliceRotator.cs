@@ -9,21 +9,8 @@ public class SliceRotator : MonoBehaviour
 	public float shakeAmount;
 	public string rotationAxis = "x";
 
-	[Header("Debug input")]
-	public KeyCode rotateAnticlockwiseKey;
-	public KeyCode rotateClockwiseKey;
-
 	private bool isRotating = false;
 	public enum RotationDirection{Anticlockwise = -1, Clockwise = 1}
-
-	void Update()
-	{
-		if (Input.GetKeyUp(rotateAnticlockwiseKey)) {
-			Rotate(RotationDirection.Anticlockwise);
-		} else if (Input.GetKeyUp(rotateClockwiseKey)) {
-			Rotate(RotationDirection.Clockwise);
-		}
-	}
 
 	public void Rotate(RotationDirection rotationDirection)
 	{
