@@ -5,9 +5,8 @@ public class Death : MonoBehaviour
 {
 	public void Die()
 	{
-		var fadeToBlack = GameObject.Find("FadeToBlack");
-
-		fadeToBlack.GetComponent<FaderToBlack>().FadeToCallback(Respawn, 1.0f);
+		var fadeToBlack = GameObject.Find("PlayerFadeToBlack");
+        fadeToBlack.GetComponent<FaderToBlack>().FadeToCallback(Respawn, 1.0f);
 	}
 
 	public void Respawn()
