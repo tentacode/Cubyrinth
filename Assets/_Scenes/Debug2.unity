@@ -44023,23 +44023,6 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!1 &329112931 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 179952, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
-  m_PrefabInternal: {fileID: 673508513}
---- !u!114 &329112933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 329112931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 372f350a35d7ec74eb60b622924d2375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interaction: 1
-  door: {fileID: 568004463}
 --- !u!1001 &381153011
 Prefab:
   m_ObjectHideFlags: 0
@@ -64066,58 +64049,48 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 474830, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
+    - target: {fileID: 450390, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 14.0354
       objectReference: {fileID: 0}
-    - target: {fileID: 474830, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
+    - target: {fileID: 450390, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
       propertyPath: m_LocalPosition.y
       value: 46.906
       objectReference: {fileID: 0}
-    - target: {fileID: 474830, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
+    - target: {fileID: 450390, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
       propertyPath: m_LocalPosition.z
       value: -24.501
       objectReference: {fileID: 0}
-    - target: {fileID: 474830, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
+    - target: {fileID: 450390, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 474830, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
+    - target: {fileID: 450390, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 474830, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
+    - target: {fileID: 450390, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 474830, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
+    - target: {fileID: 450390, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0.7071067
       objectReference: {fileID: 0}
-    - target: {fileID: 474830, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
+    - target: {fileID: 450390, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 140512, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
-      propertyPath: m_Name
-      value: Terminal_D1
-      objectReference: {fileID: 0}
-    - target: {fileID: 179952, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
-      propertyPath: m_TagString
-      value: DoorButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 198708, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
-      propertyPath: m_TagString
-      value: DoorButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 2365740, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
-      propertyPath: m_Materials.Array.data[0]
+    - target: {fileID: 11437742, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
+      propertyPath: door
       value: 
-      objectReference: {fileID: 2100000, guid: eda69b94f19c74e42bdbed2a6ce5cddc, type: 2}
-    m_RemovedComponents:
-    - {fileID: 11426146, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
-    - {fileID: 11456390, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
-  m_ParentPrefab: {fileID: 100100000, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
+      objectReference: {fileID: 568004463}
+    - target: {fileID: 11429474, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 568004463}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ec58c486e53c5f94fac39679eacf2a1b, type: 2}
   m_IsPrefabParent: 0
 --- !u!43 &678700755
 Mesh:
@@ -81331,29 +81304,6 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_PrefabInternal: {fileID: 1931870234}
---- !u!114 &1319500856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1319500855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a34500ac5514cbf836d6902c50c919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 2024808409}
---- !u!114 &1319500857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1319500855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ea5ec3545cf94f199079ebae982baa3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &1363329477
 Mesh:
   m_ObjectHideFlags: 0
@@ -82104,23 +82054,6 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!1 &1389310655 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 198708, guid: f0463c9cda88546c39e2e878522a908b, type: 2}
-  m_PrefabInternal: {fileID: 673508513}
---- !u!114 &1389310657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1389310655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 372f350a35d7ec74eb60b622924d2375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interaction: 0
-  door: {fileID: 568004463}
 --- !u!1 &1398516180
 GameObject:
   m_ObjectHideFlags: 0
@@ -109841,7 +109774,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 46.64
+      value: 49.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -109867,42 +109800,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: panLevelCustomCurve.m_RotationOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_WalkSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_UseHeadBob
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_Volume
-      value: 0.2
-      objectReference: {fileID: 0}
+    - target: {fileID: 11401414, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 2024808409}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 4892941663561143343, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: MinDistance
-      value: 1.9767418
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
