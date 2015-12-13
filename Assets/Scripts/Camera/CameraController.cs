@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
 	public GameObject playerCamera;
 	public KeyCode switchCameraKey;
 	public Image crosshair;
+	public float minDistanceRayHit = 2.5f;
 
 	void Awake()
 	{
@@ -27,7 +28,9 @@ public class CameraController : MonoBehaviour
 			Vector3 middleScreenPosition = new Vector3(Screen.width / 2, Screen.height / 2, 0);
 			Ray ray = GameObject.Find("FirstPersonCharacter").GetComponent<Camera>().ScreenPointToRay(middleScreenPosition);
 			if (Physics.Raycast(ray, out hit)) {
-				if (hit.collider.tag == "RotationButton") {
+				float distance = Vector3.Distance(playerCamera.transform.position, hit.collider.gameObject.transform.position);
+
+				if (distance < minDistanceRayHit && hit.collider.tag == "RotationButton") {
 					hit.collider.gameObject.GetComponent<ButtonRotateSlice>().OnClick();
 				}
 			}

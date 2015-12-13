@@ -118,7 +118,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: fd4667156bf134f38a59b0d478e81fc5, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 721dbf6977ff74f20b21f06510f66ac4, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
@@ -144,7 +144,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.9
+  field of view: 59.1
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -196,6 +196,7 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   switchCameraKey: 9
   crosshair: {fileID: 0}
+  minDistanceRayHit: 2.5
 --- !u!114 &11467722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -207,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2839cd1103b0747c988234964f646ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aspectRatio: 1.625
+  aspectRatio: 2
 --- !u!124 &12424214
 Behaviour:
   m_ObjectHideFlags: 1
