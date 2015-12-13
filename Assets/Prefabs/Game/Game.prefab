@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 404340}
   - 114: {fileID: 11442434}
+  - 114: {fileID: 11469346}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -23,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.128998, y: 47.17949, z: 1.9799955}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,6 +58,17 @@ MonoBehaviour:
   door3ToggleKey: 264
   door4: {fileID: 0}
   door4ToggleKey: 256
+--- !u!114 &11469346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0510e048a7391be418c9b1ad1e7e00dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

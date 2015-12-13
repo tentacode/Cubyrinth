@@ -206,6 +206,9 @@ GameObject:
   - 143: {fileID: 14388066}
   - 114: {fileID: 11488432}
   - 114: {fileID: 11465998}
+  - 114: {fileID: 11498974}
+  - 114: {fileID: 11406946}
+  - 114: {fileID: 11483854}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -308,8 +311,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185824}
-  m_LocalRotation: {x: 0, y: -0.83170617, z: 0, w: 0.5552161}
-  m_LocalPosition: {x: 23.050362, y: 46.9, z: -27.85149}
+  m_LocalRotation: {x: 0, y: 0.7071066, z: 0, w: 0.707107}
+  m_LocalPosition: {x: 36.66, y: 63.01, z: -35.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464106}
@@ -625,6 +628,17 @@ MonoBehaviour:
   animSpeed: 10
   animDistance: 0.05
   waitTime: 10
+--- !u!114 &11406946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea5ec3545cf94f199079ebae982baa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11409362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -747,6 +761,18 @@ MonoBehaviour:
   GravityModifier: 0.4
   useProfileData: 1
   sprintSpeed: 1.5
+--- !u!114 &11483854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a34500ac5514cbf836d6902c50c919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
 --- !u!114 &11488432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -759,6 +785,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugKeyCode: 301
+--- !u!114 &11498974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca7ba27f369c6664ea7359efaf6c9e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathHeight: 0
 --- !u!136 &13613660
 CapsuleCollider:
   m_ObjectHideFlags: 1

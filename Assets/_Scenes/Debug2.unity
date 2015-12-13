@@ -81858,21 +81858,6 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!1 &1398516180 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 142912, guid: 4729c264436d04a4f9a6957b3c01738f, type: 2}
-  m_PrefabInternal: {fileID: 1659940319}
---- !u!114 &1398516182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1398516180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0510e048a7391be418c9b1ad1e7e00dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1425423826
 GameObject:
   m_ObjectHideFlags: 0
@@ -90386,15 +90371,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 404340, guid: 4729c264436d04a4f9a6957b3c01738f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -29.128998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 404340, guid: 4729c264436d04a4f9a6957b3c01738f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 47.17949
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 404340, guid: 4729c264436d04a4f9a6957b3c01738f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.9799955
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 404340, guid: 4729c264436d04a4f9a6957b3c01738f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -90414,7 +90399,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 404340, guid: 4729c264436d04a4f9a6957b3c01738f, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11442434, guid: 4729c264436d04a4f9a6957b3c01738f, type: 2}
       propertyPath: slice1

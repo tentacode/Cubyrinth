@@ -6,8 +6,7 @@ public class FaderToBlack : MonoBehaviour
 {
 	public delegate void FadeCallback();
 	public float fadeDelay;
-
-	private bool isFadingIn = false;
+    
 	private FadeCallback fadedCallback;
 	private Image image;
 
