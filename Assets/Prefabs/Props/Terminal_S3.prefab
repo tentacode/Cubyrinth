@@ -45,6 +45,7 @@ GameObject:
   - 136: {fileID: 13604828}
   - 23: {fileID: 2302326}
   - 114: {fileID: 11418592}
+  - 114: {fileID: 11487596}
   m_Layer: 0
   m_Name: LeftButton
   m_TagString: RotationButton
@@ -118,6 +119,7 @@ GameObject:
   - 136: {fileID: 13652984}
   - 23: {fileID: 2301308}
   - 114: {fileID: 11434552}
+  - 114: {fileID: 11479062}
   m_Layer: 0
   m_Name: RightButton
   m_TagString: RotationButton
@@ -366,8 +368,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175216}
-  m_LocalRotation: {x: -0.5000001, y: 0.5, z: -0.5, w: 0.49999994}
-  m_LocalPosition: {x: -183.156, y: 142.841, z: 110.357}
+  m_LocalRotation: {x: -0.7071068, y: 0.00000050186475, z: -0.7071067, w: -0.00000073226954}
+  m_LocalPosition: {x: -149.794, y: 119.137, z: 187.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 476784}
@@ -895,6 +897,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 1
   sliceRotator: {fileID: 0}
+--- !u!114 &11479062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e734e494c44bcdb468bd95d8b27367c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &11487596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e734e494c44bcdb468bd95d8b27367c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!136 &13604828
 CapsuleCollider:
   m_ObjectHideFlags: 1

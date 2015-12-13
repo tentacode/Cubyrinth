@@ -186,6 +186,7 @@ GameObject:
   - 136: {fileID: 13681894}
   - 23: {fileID: 2320044}
   - 114: {fileID: 11426146}
+  - 114: {fileID: 11422016}
   m_Layer: 0
   m_Name: RightButton
   m_TagString: RotationButton
@@ -223,6 +224,7 @@ GameObject:
   - 136: {fileID: 13671266}
   - 23: {fileID: 2392048}
   - 114: {fileID: 11456390}
+  - 114: {fileID: 11495086}
   m_Layer: 0
   m_Name: LeftButton
   m_TagString: RotationButton
@@ -869,6 +871,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11422016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e734e494c44bcdb468bd95d8b27367c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &11426146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -895,6 +909,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: -1
   sliceRotator: {fileID: 0}
+--- !u!114 &11495086
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e734e494c44bcdb468bd95d8b27367c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!136 &13671266
 CapsuleCollider:
   m_ObjectHideFlags: 1
