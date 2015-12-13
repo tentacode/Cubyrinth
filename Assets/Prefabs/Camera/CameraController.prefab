@@ -196,7 +196,7 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   switchCameraKey: 9
   crosshair: {fileID: 0}
-  minDistanceRayHit: 2.5
+  minDistanceRayHit: 20
 --- !u!114 &11467722
 MonoBehaviour:
   m_ObjectHideFlags: 1
