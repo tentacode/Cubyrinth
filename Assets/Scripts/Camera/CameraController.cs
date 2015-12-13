@@ -30,10 +30,16 @@ public class CameraController : MonoBehaviour
 			if (Physics.Raycast(ray, out hit)) {
 				float distance = Vector3.Distance(playerCamera.transform.position, hit.collider.gameObject.transform.position);
 
-				if (distance < minDistanceRayHit && hit.collider.tag == "RotationButton") {
-					hit.collider.gameObject.GetComponent<ButtonRotateSlice>().OnClick();
-				}
-			}
+                if (distance < minDistanceRayHit && hit.collider.tag == "RotationButton")
+                {
+                    hit.collider.gameObject.GetComponent<ButtonRotateSlice>().OnClick();
+                }
+
+                if (distance < minDistanceRayHit && hit.collider.tag == "DoorButton")
+                {
+                    hit.collider.gameObject.GetComponent<ButtonDoor>().OnClick();
+                }
+            }
 		}
 	}
 

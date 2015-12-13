@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DeathTrigger
   - RotationButton
+  - DoorButton
   layers:
   - Default
   - TransparentFX
