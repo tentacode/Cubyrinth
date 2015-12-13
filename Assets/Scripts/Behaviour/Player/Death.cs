@@ -7,7 +7,7 @@ public class Death : MonoBehaviour
 	{
 		var fadeToBlack = GameObject.Find("FadeToBlack");
 
-		fadeToBlack.GetComponent<FaderToBlack>().FadeToCallback(Respawn);
+		fadeToBlack.GetComponent<FaderToBlack>().FadeToCallback(Respawn, 1.0f);
 	}
 
 	public void Respawn()

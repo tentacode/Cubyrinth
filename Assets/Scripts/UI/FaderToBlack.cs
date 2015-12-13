@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class FaderToBlack : MonoBehaviour
 {
 	public delegate void FadeCallback();
-	public float fadeDelay;
+	private float fadeDelay;
     
 	private FadeCallback fadedCallback;
 	private Image image;
@@ -18,8 +18,9 @@ public class FaderToBlack : MonoBehaviour
 		image = GetComponent<Image>();
 	}
 
-	public void FadeToCallback(FadeCallback callback)
+	public void FadeToCallback(FadeCallback callback, float duration)
 	{
+        fadeDelay = duration;
 		fadeState = FadeState.FadeIn;
 		fadedCallback = callback;
 	}
