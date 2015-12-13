@@ -13,8 +13,19 @@ public class GameController : MonoBehaviour {
         VRSettings.renderScale = VRScale;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
 
-        InitTitle();
+    void Start()
+    {
+        if (state == GameState.Title)
+        {
+            InitTitle();
+        }
+        else
+        {
+            InitTitle();
+            InitGame();
+        }
     }
 
 	void Update ()
@@ -41,5 +52,6 @@ public class GameController : MonoBehaviour {
         state = GameState.Play;
         GameObject.Find("GameTitle").GetComponent<Text>().enabled = false;
         GameObject.Find("CameraController").GetComponent<CameraController>().ToggleCamera();
+        GameObject.Find("PlayerUI/PlayerFadeToBlack").GetComponent<FaderToBlack>().fadeState = FaderToBlack.FadeState.FadeOut;
     }
 }
