@@ -16,6 +16,7 @@ public class Death : MonoBehaviour
 
         float maxY = float.NegativeInfinity;
         Vector3 highPosition = new Vector3();
+        Quaternion quaternion = new Quaternion();
 
         foreach (GameObject spawner in spawners)
         {
@@ -23,9 +24,11 @@ public class Death : MonoBehaviour
             {
                 maxY = spawner.transform.position.y;
                 highPosition = spawner.transform.position;
+                quaternion = spawner.transform.rotation;
             }
         }
 
         transform.position = highPosition;
+        transform.rotation = quaternion;
     }
 }
