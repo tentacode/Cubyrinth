@@ -16,7 +16,20 @@ public class FaderToBlack : MonoBehaviour
 	void Start()
 	{
 		image = GetComponent<Image>();
+        fadedCallback = Nothing;
 	}
+
+    public void FadeOut(float duration)
+    {
+        fadeDelay = duration;
+        fadedCallback = Nothing;
+        image.color = new Color(1, 1, 1, 1);
+        fadeState = FadeState.FadeOut;
+    }
+
+    void Nothing()
+    {
+    }
 
 	public void FadeToCallback(FadeCallback callback, float duration)
 	{
